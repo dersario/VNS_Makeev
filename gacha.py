@@ -4,7 +4,3 @@ def pull(n: int) -> tuple[int, int]:
         n-=1
     epic = n//10
     return epic, legendary
-i = int(input("Введите количество круток: "))
-while i!=-1:
-    print(pull(i))
-    i = int(input("Введите количество круток: "))
