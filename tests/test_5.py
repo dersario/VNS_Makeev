@@ -48,7 +48,7 @@ def test_process_logs(
     expected_players_achievements,
 ):
     with open(input_logs_path) as f:
-        logs = f.readlines()
+        logs = f.read().split('\n')
 
     blocks_count, players, players_online, players_blocks, player_achievements = (
         process_logs(logs)
